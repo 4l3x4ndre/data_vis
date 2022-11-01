@@ -42,14 +42,14 @@ for i in range(len(nodes)):
     n = nodes[i]
 
     d.ellipse((n.position[0], n.position[1], n.position[0]+SIZE, n.position[1]+SIZE),
-           fill=(int(n.position[0] * 255/1500), int(n.position[1] * 255/1500), 128))
+           fill=(int(n.position[0] * 255/1500), int(n.position[1] * 255/1500), 255))
 
     d.text((n.position[0], n.position[1]), str(i),
            fill=(0, 0, 0))
 
 
 # draw centers
-colors = [(255, 0, 0), (0, 255, 0), (0, 0, 255), (0, 0, 255), (0, 0, 255)]
+
 for i in range(len(centers)):
     c = centers[i]
     d.ellipse((c[0], c[1], c[0]+SIZE_CENTER, c[1]+SIZE_CENTER), fill=(0, 0, 0), outline=(0, 0, 0))
