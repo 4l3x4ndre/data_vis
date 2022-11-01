@@ -10,3 +10,4 @@ To do:
 - movable gravity centers
 - show links
 
+![screenshot](https://github.com/4l3x4ndre/data_vis/blob/main/screenshot.png)
