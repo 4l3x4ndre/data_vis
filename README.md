@@ -9,7 +9,7 @@ Run `gui.py`
 To do:
 - place gravity centers appropriately by default
 - use csv to valuate links
-- movable gravity centers
+- ~~movable gravity centers~~
 - show links
 
 ![screenshot](https://github.com/4l3x4ndre/data_vis/blob/main/gif.gif)
