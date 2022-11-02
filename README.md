@@ -7,9 +7,9 @@ Colors depend on the position.
 Run `gui.py`
 
 To do:
-- place gravity centers appropriately
+- place gravity centers appropriately by default
 - use csv to valuate links
 - movable gravity centers
 - show links
 
-![screenshot](https://github.com/4l3x4ndre/data_vis/blob/main/screenshot.png)
+![screenshot](https://github.com/4l3x4ndre/data_vis/blob/main/gif.gif)

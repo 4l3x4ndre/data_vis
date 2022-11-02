@@ -9,7 +9,7 @@ SIZE_CENTER = 40
 def create_centers(center_number, pos):
     centers = []
     for i in range(center_number):
-        centers.append([random.randint(pos[0], pos[2]), (i+1) * pos[3] / center_number])
+        centers.append([random.randint(pos[0], pos[2]), random.randint(pos[1], pos[3])])
     return centers
 
 
@@ -31,6 +31,22 @@ def create_nodes(centers, n):
         y = y / sum(values)
 
         nodes.append(Node(values, (x, y)))
+
+    return nodes
+
+
+def update_nodes(centers, nodes):
+    for n in nodes:
+        x, y = (0, 0)
+        values = n.values
+        for v in range(len(centers)):
+
+            x += values[v] * centers[v][0]
+            y += values[v] * centers[v][1]
+
+        x = x / sum(values)
+        y = y / sum(values)
+        n.position = (x, y)
 
     return nodes
 
